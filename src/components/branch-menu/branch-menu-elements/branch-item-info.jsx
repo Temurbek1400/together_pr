@@ -11,7 +11,7 @@ const BranchItemInfo = ({ selectedItem }) => {
             </ItemImgWrap>
             <ItemInfo>
                <ItemProp>Address:</ItemProp>
-               <ItemAddress>{selectedItem.city + ","} {selectedItem.address}</ItemAddress>
+               <ItemAddress>{selectedItem.city} {selectedItem.address}</ItemAddress>
             </ItemInfo>
             <ItemInfo>
                <ItemProp>Call:</ItemProp>
