@@ -22,7 +22,7 @@ const BranchItemStyle = styled.div`
    background-color: ${(props) => props.selected ? "#FFC339" : "#fff"};
    border: 1px solid ${(props) => props.selected ?"no" : "#656565"};
    border-radius: 1rem;
-   width: 270px;
+   width: 350px;
    padding: 17px 30px;
    margin: auto;
    display: flex;
@@ -30,10 +30,10 @@ const BranchItemStyle = styled.div`
    justify-content: flex-start;
    margin-bottom: 1rem;
    transition: all 0.3s ease-in-out;
-   /* @media screen and (max-width: 768px) {
-      height: 600px;
+   @media screen and (max-width: 768px) {
+      width: 80vw;
       overflow-y: hidden;
-   } */
+   }
    &:hover {
       box-sizing: border-box;
       border: 1px solid #FFC339;

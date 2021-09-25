@@ -18,6 +18,7 @@ const BranchItemInfo = ({ selectedItem }) => {
                <ItemProp>Call:</ItemProp>
                <ItemAddress>{selectedItem.number}</ItemAddress>
             </ItemInfo>
+            <MainButton />
          </BranchItem>
       </BranchItemInfoWrap>
    );
@@ -46,5 +47,13 @@ const ItemInfo = styled.div`
 const ItemProp = styled.div`
    color: #999;
 `;
+
 const ItemAddress = styled.h3``;
+const MainButton = styled.button`
+   width: 200px;
+   font-weight: 700;
+   font-size: 30px;
+   background-color: #FFC339;
+   border-radius: 3rem;
+`;
 export default BranchItemInfo;
