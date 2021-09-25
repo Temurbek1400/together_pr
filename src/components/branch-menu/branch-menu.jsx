@@ -23,7 +23,7 @@ class BranchMenu extends Component {
       });
       this.setState({ items: items });
    }
-   componentDidMount() {
+   componentDidMount = () => {
       this.setData();
    }
    getItem = (id) => {
@@ -63,6 +63,7 @@ class BranchMenu extends Component {
 const BranchMenuBlock = styled.div`
    display: flex;
    justify-content: center;
+   flex-wrap: wrap;
 `;
 
 export default BranchMenu;

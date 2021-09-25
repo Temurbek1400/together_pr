@@ -30,6 +30,10 @@ const BranchItemStyle = styled.div`
    justify-content: flex-start;
    margin-bottom: 1rem;
    transition: all 0.3s ease-in-out;
+   /* @media screen and (max-width: 768px) {
+      height: 600px;
+      overflow-y: hidden;
+   } */
    &:hover {
       box-sizing: border-box;
       border: 1px solid #FFC339;
