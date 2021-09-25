@@ -18,7 +18,6 @@ const BranchItemInfo = ({ selectedItem }) => {
                <ItemProp>Call:</ItemProp>
                <ItemAddress>{selectedItem.number}</ItemAddress>
             </ItemInfo>
-            <MainButton />
          </BranchItem>
       </BranchItemInfoWrap>
    );
@@ -27,7 +26,13 @@ const BranchItemInfoWrap = styled.div`
    background-color: #eee;
    border: #aaa 1px solid;
    border-radius: 1.5rem;
-   width: 450px;
+   max-width: 400px;
+   margin: auto;
+   padding: 2rem;
+   @media screen and (max-width: 900px) {
+      width: 80vw;
+      margin-top: 20px;
+   }
    @media screen and (max-width: 540px) {
       width: 80vw;
    }
@@ -49,11 +54,4 @@ const ItemProp = styled.div`
 `;
 
 const ItemAddress = styled.h3``;
-const MainButton = styled.button`
-   width: 200px;
-   font-weight: 700;
-   font-size: 30px;
-   background-color: #FFC339;
-   border-radius: 3rem;
-`;
 export default BranchItemInfo;

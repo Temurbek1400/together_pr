@@ -22,7 +22,8 @@ const BranchItemStyle = styled.div`
    background-color: ${(props) => props.selected ? "#FFC339" : "#fff"};
    border: 1px solid ${(props) => props.selected ?"no" : "#656565"};
    border-radius: 1rem;
-   width: 350px;
+   width: 300px;
+   height: 100px;
    padding: 17px 30px;
    margin: auto;
    display: flex;
@@ -49,7 +50,7 @@ const ItemInfo = styled.div`
    text-align: left;
 `;
 
-const ItemCity = styled.h3``;
+const ItemCity = styled.h4``;
 const ItemAddress = styled.p``;
 
 export default BranchItem;
