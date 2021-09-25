@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const BranchItemInfo = ({ selectedItem }) => {
    console.log(selectedItem);
@@ -7,7 +8,7 @@ const BranchItemInfo = ({ selectedItem }) => {
       <BranchItemInfoWrap>
          <BranchItem>
             <ItemImgWrap>
-               <ItemImg src={selectedItem.imgLink} />
+               <ItemImg src={selectedItem.imgLink} className="img-fluid" />
             </ItemImgWrap>
             <ItemInfo>
                <ItemProp>Address:</ItemProp>
@@ -26,6 +27,9 @@ const BranchItemInfoWrap = styled.div`
    border: #aaa 1px solid;
    border-radius: 1.5rem;
    width: 450px;
+   @media screen and (max-width: 540px) {
+      width: 80vw;
+   }
 `;
 const BranchItem = styled.div`
    padding: 1rem;

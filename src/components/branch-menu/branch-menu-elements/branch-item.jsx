@@ -8,7 +8,7 @@ const BranchItem = (props) => {
    return (
       <BranchItemStyle onClick={() => props.handleSelect(props.id)} selected={props.selected}>
          <LocationImgWrap>
-            <LocationImg selected={props.selected} src={props.selected ? locWhite : locOrange} />
+            <LocationImg selected={props.selected} src={props.selected ? locWhite : locOrange} className="image-fluid" />
          </LocationImgWrap>
          <ItemInfo>
             <ItemCity>{props.city}</ItemCity>
@@ -40,8 +40,10 @@ const BranchItemStyle = styled.div`
       transform: scale(1.1);
    }
 `;
-const LocationImgWrap = styled.div``;
-const LocationImg = styled.img``;
+const LocationImgWrap = styled.div`
+`;
+const LocationImg = styled.img`
+`;
 const ItemInfo = styled.div`
    margin-left: 20px;
    text-align: left;

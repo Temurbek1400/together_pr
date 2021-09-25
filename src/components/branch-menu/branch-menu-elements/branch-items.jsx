@@ -2,18 +2,19 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import BranchItem from "./branch-item";
 
-
 const BranchItems = (props) => {
    return (
       <BranchItemsStyled>
-         {
-            props.items.map(item =>
-               <BranchItem {...item} handleSelect={props.handleSelect} key={item.id}/>
-            )
-         }
+         {props.items.map((item) => (
+            <BranchItem
+               {...item}
+               handleSelect={props.handleSelect}
+               key={item.id}
+            />
+         ))}
       </BranchItemsStyled>
    );
-}
+};
 
 const BranchItemsStyled = styled.div`
    width: 50%;
@@ -26,7 +27,7 @@ const BranchItemsStyled = styled.div`
    }
    @media screen and (max-width: 768px) {
       display: block;
-      width: 80%;
+      width: 100vw;
       height: 300px;
       overflow-y: auto;
    }

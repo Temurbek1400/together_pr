@@ -62,8 +62,11 @@ class BranchMenu extends Component {
 
 const BranchMenuBlock = styled.div`
    display: flex;
-   justify-content: center;
+   justify-content: space-evenly;
    flex-wrap: wrap;
+   margin: auto;
+   text-align: center;
+   
 `;
 
 export default BranchMenu;
